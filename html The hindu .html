@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .nav{
+             width: 100%;
+             border: 1px solid black;
+             height: 150px;
+             text-align: center;
+        }
+        .box1{
+             
+             text-align: center;
+             height: 50px;
+        }
+        .header{
+            grid-template-columns: 160px 1fr 1fr  160px;
+            border: 1px solid black;
+            display: grid;
+            gap: 10px;
+
+        }
+        .block1{
+            grid-column: 1/2;
+            border: 1px solid black;
+            height: 600px;
+            position:  -webkit-sticky;
+            position: sticky;
+            top: 0;
+
+        }
+        .block2{
+            grid-column: 2/3;
+            
+            width: 800px;
+            height: 1400px;
+            display: grid;
+            grid-template-rows: 60px 50px 1fr 1fr  1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr ;
+        }
+        .b21{
+            grid-row: 5;
+            border: 1px solid black(17, 85, 173) ;
+            height: 300px;
+            grid-column: 1/end;
+            width: 790px;
+            margin-top: 10px;
+
+            
+        }
+        .b22{
+            grid-row: 6;
+            border: 1px solid black(55, 20, 151) ;
+            grid-column: 1;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 5px;
+            
+
+        }
+        .b24{grid-row: 6;
+            margin-top: 5px;
+            width: 390px;
+           
+            grid-column: 2;
+            height: 200px;
+            border: 1px solid black;
+
+        }
+        .b23{
+            grid-row: 7;
+            border: 1px solid black  ;
+            grid-column: 1/end;
+            height: 250px;
+            margin-top: 10px;
+            
+        }
+
+        .block3{
+            grid-column: 3/4;
+            /*border: 1px solid black;*/
+            width: 350px;
+            height: 1350px;
+            display: grid;
+            grid-template-rows:50px 30px 1fr 1fr 1fr 1fr  ;
+
+        }
+        .b31{
+            grid-row: 1;
+        }
+        .b32{
+            grid-row: 2;
+        }
+        .b33{
+            grid-row: 3;
+            margin-top: 10px;
+        }
+        .b34{
+            grid-row: 4;
+        }
+        .b35{
+            grid-row: 5;
+            margin-top: 90px;
+        }
+        .b36{
+            grid-row: 6;
+        }
+
+       /* .b31,.b32,.b33,.b34,.b35,.b36{
+            /*border: 1px solid blue;*/
+
+        .block4{
+            grid-column: 4;
+        
+            height: 600px;
+            position:  -webkit-sticky;
+            position: sticky;
+            top: 0;
+
+        }
+        .box2{
+           /* border-bottom: 1px red;*/
+            grid-row: 1;
+            grid-column: 1/end;
+        }
+        .box3{
+           /* border: 1px solid green;*/
+            grid-row: 2;
+            padding-top: 10px;
+            grid-column: 1/end;
+
+        }
+        .box4{
+            grid-row: 3;
+            border: 1px solid black;
+            width: 380px;
+            height:380px ;
+            gap: 10px;
+            grid-column: 1;
+            background-color: rgb(74, 55, 104);
+        }
+        .box5{
+            grid-row: 3;
+           /* border: hotpink solid 1px;*/
+            width: 390px;
+            height:500px ;
+            gap: 10px ;
+            
+            display: grid;
+            
+            grid-template-rows: 120px 120px 120px 120px ;
+
+        }
+        .box6{
+            grid-row: 4;
+            border: 1px solid black;
+            width: 380px;
+            margin-top: -105px;
+            height: 110px;
+
+        }
+        .b51{
+            grid-row: 1;
+            border: 1px solid grey ;
+        }
+        .b52{
+            grid-row: 2;
+            border: 1px solid grey ;
+
+        }
+        .b53{
+            border: 1px solid grey ;
+            grid-row: 3;
+        }
+        .b54{
+            border: 1px solid grey ;
+            grid-row: 4;
+        }
+ </style>
+</head>
+<body>
+    <div class="nav" >
+        <div><img src="title the hindu.png"></div>
+         <img src="	https://th.thgim.com/static/theme/default/base/img/logo.png" style="margin-top:20px; ">
+        
+        <div class="box1">
+            <span style="color: blue;margin-right: 20px;"><b>Latest News</b></span>
+            <span style="color: grey;margin-right: 20px;">WEDNESDAY, NOVEMBER 10, 2021</span>
+            <span style="color: blue;"><b>E-Papers</b></span>
+        </div>
+
+    </div>
+    <div class="header">
+
+        <div class="block1"> <img class="sticky" src="https://s0.2mdn.net/simgad/17080283734867157440" style="position: sticky;"></div>
+        <div class="block2">
+            <div class="box2" style="border-bottom: grey 2px solid;">
+                <div><span style="color: grey; margin-left: 10px;margin-top: 10px;">Menu</span></div>
+                <div>  <span style="margin-right: 10px; color: grey; padding-top: 10px;"><img src="dashboard.jfif" style="height: 0.8cm;width: 1.5cm;"></span>
+                    <span style="margin-right: 10px;color: grey;"><b>HOME</b></span>
+                    <span style="margin-right: 10px;color: grey;"><b>NEWS</b></span>
+                    <span style="margin-right: 10px;color: grey;"><b>OPINION</b></span>
+                    <span style="margin-right: 10px;color: grey;"><b>BUSINESS</b></span>
+                    <span style="margin-right: 10px;color: grey;"><b>SPORT</b></span>
+                    <span style="margin-right: 10px;color: grey;"><b>ENTERTAINMENT</b></span>
+                    <span style="margin-right: 5px;color: grey;"><b>CROSSWORD+</b></span>
+                    <span style="color: grey; " ><b>SCIENCE</b></span>
+                </div>
+       
+            </div>
+            <div class="box3">
+                <span style="margin-right: 15px; color: red;"><b>TRENDING TODAY</b></span>
+                <span style="margin-right: 15px; color: grey;">CLIMATE CHANGE</span>
+                <span style=" margin-right: 15px; color: grey;">TWENTY 20 WORLD CUP</span>
+                <span style=" margin-right: 15px; color: grey;">CORONAVIRUS</span>
+                <span><img src="https://www.thehindu.com/housing-real-estate-india/r9q0f9/article30495011.ece/BINARY/Housingmenu"></span>
+
+            </div>
+            <div class="box4">
+                <img src="manipurpng.png" style="width: 380px; height: 200px;">
+                <div style="margin-left: 10px;"><h2 style="color: white"> Assam Rifles his Six-year-old son among seven killed in Manipur ambush.</h2></div>
+                <div style="margin-left: 10px;"><b><h5 style="color: white">DINAKAR PERI</h5></b></div>
+                <div style="margin-left: 10px;"><b><h5 style="color: white; padding-bottom: 20px;">IBOYAIMI LALITHANGMBM</h5></b></div>
+
+            </div>
+            <div class="box5">
+                <div class="b51" style="display: flex;">
+                   <img src="delhi pollution.jfif" style="height: 115px;width: 120px;">
+                   <h4 style="padding-left: 10px;">DELHI
+                    <p>Delhi pollution | schools shut for a week,construction barred,govt staff to work from home.</p>
+                   </h4>
+                   
+                   
+                
+                </div>
+                <div class="b52" style="display: flex;">
+                    <img src="13NOVTH--Covid.jfif"style="height:115px; width:120px;">
+                    <h4 style="padding-left: 10px;">LIT FOR LIFE 
+                        <p>Lit For Life | India should have declared covid-19 pandemic early,says experts.</p>
+                       </h4>
+
+                </div>
+                <div class="b53" style="display: flex;">
+                    <img src="environment.jfif"style="height:115px; width:120px;">
+                    <h4 style="padding-left: 10px;">ENVIRONMENT 
+                        <p>Environment | UN climate talks,resume cautious coal phaseout still on table.</p>
+                       </h4>
+            
+                </div>
+                <div class="b54" style="display: flex;">
+                    <img src="13NOVTH--Covid.jfif"style="height:115px; width:120px;">
+                    <h4 style="padding-left: 10px;">NATIONAL
+                        <p>National festival | Chatt festival:Mirror of the Sun.</p>
+                       </h4>
+                </div>
+                
+
+            </div>
+            <div class="box6" style="display: flex;">
+            <img src="Former-CM-of-Goa-Luizinho-Faleiro-joins-TMC.jfif" style="height:110px; width:120px">
+            <h4 style="padding-left: 10px;">OTHER STATES
+                <p>TM nominates ex-Goa CM Luizinho Faliero to Rajya Sabha.</p>
+               </h4>
+
+
+        </div>
+        <div class="b21" style="background-color: rgb(241, 241, 232);">
+            <table>
+                <tr>
+                    
+                    <th> <ul><li> <h5 style="color: gray; ">Sand mining activities on farm land near riverbeds stopped in Rajasthan</h5></li></ul></th>
+                    <th><ul><li> <h5 style="color: gray; margin-left: 10px;">Shivering in major power outages, Kashmir spurs kangri sales</h5></li></ul></th>
+                    <th> <ul><li><h5 style="color: gray;margin-left: 10px; ">Shivering in major power outages, Kashmir spurs kangri sales</h5></li></ul></th>
+                </tr>
+                <tr>
+                    <th><ul><li><h5 style="color: gray; ">Government urged to rethink travel bubble policy </h5></li></ul></th>
+                    <th><ul><li><h5 style="color: gray; ">Security forces tighten grip as protests break out following the appointment of a new ruling council </h5></li></ul></th>
+                    <th><ul><li><h5 style="color: gray; "> Protester killed in Sudan anti-coup rallies</h5></li></ul></th>
+                </tr>
+                <tr>
+                    <th><ul><li><h5 style="color: gray; ">Protester killed in Sudan anti-coup rallies </h5></li></ul></th>
+                    <th><ul><li><h5 style="color: gray; ">Government urged to rethink travel bubble policy </h5></li></ul></th>
+                    <th><ul><li><h5 style="color: gray; "> Security forces tighten grip as protests break out following the appointment of a new ruling council</h5></li></ul></th>
+
+
+                </tr>
+            </table> 
+
+
+
+
+        </div>
+        <div class="b22" style="display: flex;">
+            <img src="delhi pollution.jfif" style="height: 200px;width: 190px;"><h4 style="margin-left: 10px;">DELHI POLLUTION  <p>Delhi pollution|schools closed for a week 
+                ,construction barred,govt staff to work from home.
+            <p><h4>
+        
+        </div>
+            <div class="b24" style="display: flex;"><img src="SupremeCourtofIndia2.jfif" style="height: 200px;width: 190px;"><h4 style="margin-left: 10px;">NATIONAL<p> National | Supreme Court poser to State
+                 governments on encroachments</p></h4>
+            </div>
+
+            
+        
+        <div class="b23">
+            <table>
+                <tr>
+                    <th><h4 style="color: white bold; background-color: red; width: 300px;">COVID-19 TRACKER</h4> </th>
+                    <th><h4 style="color: white bold; background-color: rgba(255, 0, 0, 0.63); width: 250px;">SEE ALL REPORTS </h4></th>
+                    <th><h4 style="color: white bold; background-color: rgba(255, 0, 0, 0.342); width: 230px;"> LIVE UPDATES </h4></th>
+                </tr>
+                <tr>
+                    <th rowspan="3"><img src="india.jfif" style="height: 150px;width: 200px;"></th>
+                    <th rowspan="3" colspan="2"><img src="vaccine chaet.jpg"style="height:150px;width:450px" ></th>
+
+                </tr>
+            </table>
+        </div>
+        
+
+
+
+
+
+        </div>
+        <div class="block3">
+            <div class="b31" style="display: flex; margin-top: 10px;">
+                <button style="color: white;background-color: blue;width: 100px;height: 30px; margin-right: 10px;"><b>FREE TRIAL</b></button>
+                <button style="color: black;background-color: yellow;width: 150px;height: 30px;margin-right: 10px;"><b>SUBSCRIBE NOW</b></button>
+                <button style="color: black;background-color: white;width: 70px;height: 30px;"><b>LOG IN</b></button>
+            
+            
+            
+            </div>
+            <div class="b32" style="background-color: green;">
+                <ul style="margin-top: 10px;"><li style="color: white;"> World wide Suhasini Hari</li></ul>
+            </div>
+            <div class="b33">  <img src="add.jfif" style=" width:350px
+                "></div>
+            <div class="b34"><img src="nasa add.png" style="width: 350px; height: 150px;"></div>
+            <div class="b35" style="margin-top: -150px;"><img src="add 2.jfif"style="width: 350px; height=400px"><img src="add.jfif"style="height:150px;width:350px"></div>
+            <div class="b36"><img src="nasa add.png" style="height: 150px;width: 350px;"><img src="the.jpg" style="height: 150px;width: 350px;"></div>
+        </div>
+
+        <div class="block4"><img src="https://s0.2mdn.net/simgad/7994246120064975576"</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic form</title>
+    <style>
+        input {
+            background-color: rgba(163, 154, 247, 0.705);
+            border: 2px solid black;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        
+        button {
+            border: 2px solid black;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myform">
+        <input type="button" value=" Dynamic Form" style="background-color: rgb(36, 196, 142);height: 30px; width: 110px;" onclick="showForm()">
+        <div id="myLocation"></div>
+
+        <script>
+            function showForm() {
+                var data = "Name:<input  type='text'id='Name'><br>Rollno:<input type='number'><br>Marks:<input type='number'id='Marks'><br>Email:<input type='text'id='Email'><br>Password:<input type='password'><br><button id='Submit'>Submit</button>"
+
+                document.getElementById("myLocation").innerHTML = data;
+            }
+            // ("#Submit").click(function() {
+            //     var Name =  $("Name").val();
+            //     var Email = $("Email").val();
+            //     var Marks = $("Marks").val();
+            //     if (Name == '' || Email == '' || password == '' || Marks == '') {
+            //         alert("Fill all Details")
+            //     }
+            // })
+        </script>
+
+
+</body>
+
+</html>

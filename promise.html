@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        let PromiseObject = new Promise((resolve, reject) => {
+            resolve("Promise is resolve");
+            reject("Promise rejected")
+
+        });
+        console.log(PromiseObject);
+
+        PromiseObject.then(() => {
+                console.log(" will execute only if promise resolvedPromise resolve");
+                //this will get executed when our promise is resolved
+            })
+            .catch(() => {
+                console.log("Promise Rejected");
+                // this will execute on rejection of our promise //
+                // basically this is to handle error(uncaught error when promise rejected)
+
+            })
+            //********************************************************************************************///
+            //XML //XHR//GET method//
+        let xhr = new XMLHttpRequest;
+        xhr.open("post", 'https://jsonplaceholder.typicode.com/todos/1')
+        xhr.send()
+        console.log(xhr);
+    </script>
+</body>
+
+</html>

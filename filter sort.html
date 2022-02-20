@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        tr {
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="myInput" type="text" placeholder="search" name="search">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Raj</th>
+                <th>13</th>
+                <th>89</th>
+            </tr>
+            <tr>
+                <th>Surseh</th>
+                <th>26</th>
+                <th>80</th>
+            </tr>
+            <tr>
+                <th>Rakesh</th>
+                <th>25</th>
+                <th>80</th>
+            </tr>
+            <tr>
+                <th>Arjun</th>
+                <th>19</th>
+                <th>90</th>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        const searchInput = document.getElementById('myInput')
+        const rows = document.querySelectorAll('tbody tr')
+            //  console.log(rows);
+        searchInput.addEventListener("keyup", function(event) {
+            // console.log(event);
+            const q = event.target.value;
+            rows.forEach((row) => {
+                row.querySelector('th').textContent.startsWith(q)
+                if (q) {
+                    row.style.display = "table-row"
+
+                } else
+                    row.style.display = "none"
+                    //  ?
+                    //     (row.style.display = "table-row") :
+                    //     (row.style.display = "none"); // hides yhe rows//
+            });
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        alert("Hello World!!")
+        alert("HEY!!!")
+            // DATATYPES //
+        let num1 = 50;
+        let num2 = 60;
+        console.log("codekul" + num2) // concatanation//
+        console.log(num1 % num2)
+            //relational operators > <
+        console.log(num1 > num2) // gives boolean value as true or false //
+            // = this is assignment value == is equal sign
+        console.log(num1 == "50") //here it considers 50 as number though it is string   (TRUE) 
+        console.log(num1 === "50") //here it considers both side L.h.s== R.h.s (HENCE FALSE) strict equality condition 
+            // >= and <= gives true even if any one is true 
+
+        // post, pre  increment num++; 
+        console.log(num1++); //50//
+        console.log(++num1) // 52//
+        console.log(+num1); //52//
+
+
+        function display() {
+            console.log("Welcome ")
+
+        }
+        display()
+        let show = function() {
+            console.log("VARIABLE ");
+            return 0;
+        }
+        console.log(show) // this prints function() { console.log("VARIABLE "); return 0;}
+        console.log(show()) // this will give 0 i.e value of 0//
+
+        function add() {
+            let num1 = 10;
+            let num2 = 20;
+            console.log('Addition is ', num1 + num2)
+        }
+        add()
+
+        function Subtract(num1, num2) {
+            console.log(num1 - num2);
+
+
+
+        }
+        Subtract(20.30)
+        let hello = function() {
+            console.log("Welcome");
+            return true
+        }
+        hello()
+        console.log(hello)
+    </script>
+</body>
+
+</html>

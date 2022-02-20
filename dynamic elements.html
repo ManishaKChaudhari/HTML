@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <button id="btn">Create Paragraph</button>
+    <script>
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", () => {
+            console.log("Welcome ");
+            let para = document.createElement("pp")
+
+            let body = document.body;
+            // append appendchild
+            body.appendChild(para)
+                // para.innerHTML = "Codekul"
+                // 
+            let content = "Javascript";
+            para.append(content)
+
+        })
+    </script>
+</body>
+
+</html>

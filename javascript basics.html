@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+<!-- lexical scope :-->
+<!-- const keyword is block scope and it should be  initialized and declared on the same line
+       let keyword is block as well as funtion scope
+       var keyword is global as well as funtion scope -->
+<!-- for var keyord #hoisting # i.e exucution is by default done in sequence declaration 
+       , initialization,
+         for var keyword hoisting is accepted 
+       1) declaration, execution ,initialization,,
+       2)execution ,declare and initialize =======>undefined 
+
+       ////////let  keyword does not accept hoisting .. -->
+<!-- why hoisting is not supported for let and const==>ideclaration is done in diffrent memory  -->
+<!-- Variables defined with let must be Declared before use.   -->
+
+
+
+
+<body>
+    <script>
+        alert("Welcome to javascript")
+            // var number1;// declaration
+            // number1=10;  // initialization
+            // console.log(number1);
+        const PI = 3.14;
+
+        var name;
+        name = "Manisha";
+        console.log(name)
+        let name = a;
+        // name = b;this cannot be done i.e reassign with let 
+        console.log(name);
+
+
+
+        if (true) {
+            var number1; // declaration
+            number1 = 30; // initialization
+            console.log(number1);
+
+        }
+
+        function show() {
+            var number2;
+            number2 = 20;
+            console.log(number2)
+            console.log(PI)
+
+        }
+
+        show();
+        // scopes: global scope,block scope,function scope  
+        // datatypes
+        // String,number ,boolean,array & object
+        // const we cannot resign value  and it is written as const number1=15;
+        // hoisting we can access the variable before the declaration this is for var keyword variable //
+        // var let const hoisting //
+        //undefinerd//
+        var number6;
+
+        console.log(number6);
+
+
+        var number7;
+        number7 = null
+        console.log(number7);
+
+        var num1 = 551;
+        console.log(num1);
+        console.log(++num1);
+        console.log(num1);
+
+        var num1 = 50;
+        console.log(num1);
+        console.log(num1++);
+        console.log(num1);
+
+        var num1 = 10;
+        var num2 = 20;
+        num1 += num2; // this statement is num1=num1+num2;//
+        console.log(num1);
+
+        console.log(num1 > num2);
+        console.log(num2 === "2"); // datatype and string will gives false // strict operator//
+        console.log(num2 = !2);
+
+        if (true) {
+            console.log(true && true)
+        } else {
+            console.log(true)
+        }
+        //DOM//ternary //
+        var show = function() {
+            console.log("Hii")
+            return true
+            console.log("hello") // this will not be printed ar we used return//
+        }
+        show()
+        console.log(show())
+
+        // STUDENT'S PERCENTAGE DEMO MARKS//
+        var percentage = 45;
+        if (percentage < 35) {
+            console.log('Failed')
+        } else if (percentage >= 35 && percentage < 50) {
+            console.log('Pass Class')
+        } else if (percentage >= 50 && percentage < 75) {
+            console.log('Pass with First Class')
+        } else
+            console.log('Distinction')
+
+        //  on clicking button element dynamically anchor element//
+        //
+    </script>
+    //
+    <h2> my javascript</h2>
+    // <button type="button" // onclick="document.getElementById ('demo').innerHTML=Date()">
+    //     <button id="myBtn"></button> //
+    <p id="demo">hey</p>
+    //
+    <script>
+        //     document.getElementById("myBtn").addEventListener ("click",displayDate);
+        //     function displayName(){
+        //         document.getElementById("demo").innerHTML=Date();
+    </script>
+
+</body>
+
+</html>

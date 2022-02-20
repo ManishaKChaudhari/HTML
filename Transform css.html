@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box1 {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            transform: translateY(200px);
+            transform: rotateX(180deg);
+            /* transform: scaleX(3);*/
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            animation-name: leftToRight;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes leftToRight {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+        
+        .box1:hover {
+            transform: translateY(200px);
+            transform: rotateZ(180deg);
+            transform: scale(2);
+            transform: skewX(180deg);
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        Codekul
+
+    </div>
+
+
+</body>
+
+</html>

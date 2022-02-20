@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Grid Template</title>
+    <style>
+        
+        .header {
+           
+            display: flex;
+            height: 40px;
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+            justify-content: end;
+            padding-right: 5px;
+            position:relative;
+            width:100%;
+            border: 2px solid black;
+
+
+        }
+        .header2{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 
+
+
+
+        }
+
+       
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            border: 2px solid black;
+            width: 100px;
+            height: 630px;
+            padding-top: 30px;
+            display: inline;
+            
+        }
+        .box2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+           position: sticky;
+            width: 500px;
+            height: 630px;
+            padding-top: 20px;
+           
+        }
+        .box3{
+            
+            grid-column-start: 3;
+            grid-column-end: 5;
+            height:630px ;
+            
+        }
+        .box4{
+            
+            grid-column-start: 5;
+            grid-column-end: end;}
+            
+        .card{
+            
+           
+        
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    
+        <div class="header">
+            <h4><i class="fa fa-search blue-color " ></i></h4>
+            <h4>Home</h4>
+            <h4>About us</h4>
+            <h4>Contact</h4>
+            <h4><button>Login</button></h4>
+            <h4><button>Logout</button></h4>
+           
+        </div>
+    
+        <div class="header2">
+            <div class="box1">
+            <img src="iphone-12-pro-camera-100862080-orig cam.jpg" style="width: 100px;height: 100px; padding-top: 10px;">
+            <img src="iPhone-12-Green.jpg"  style="width: 100px;height: 100px;">
+            <img src="iphone side.jpg"  style="width: 100px;height: 100px;">
+            <img src="apple-iphone-12-blue-3d-.jpg"  style="width: 100px;height: 100px;">
+            <iframe src="https://www.bing.com/videos/search?view=detail&mid=D143B7429ACBF8ECAA22D143B7429ACBF8ECAA22&q=youtube iphone 12&shtp=GetUrl&shid=a809fd9f-169d-4d05-b5f5-c67d3f733f0c&shtk=aVBob25lIDEyIHJldmlldzogbmV3IHN0YW5kYXJk&shdk=VGhlIEFwcGxlIGlQaG9uZSAxMiBoYXMgYSBsb3Qgb2YgbmV3IHN0dWZmOiBhIG5ldyBPTEVEIHNjcmVlbiwgNUcsIE1hZ1NhZmUgZm9yIGNoYXJnaW5nIGFuZCBhY2Nlc3NvcmllcywgYW5kIGEgd2hvbGUgbmV3IGRlc2lnbiB3aXRoIGEgY2VyYW1pYyBzaGllbGQgc2NyZWVuLiBEb2VzIGFsbCB0aGF0IGFkZCB1cCB0byBhIG11c3QtdXBncmFkZT8gT25seSBpZiB5b3UgcmVhbGx5IG5lZWQgb25lLCBldmVuIHRob3VnaCBpdCdzIGdyZWF0LiBXYXRjaCB0aGUgaVBob25lIDEyIFBybyByZXZpZXc6IGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9NzFtM1NER2EyMjAgSWYgeW91IGJ1eSBzb21ldGhpbmcgZnJvbSBhIFZlcmdlIGxpbmssIFZveCBNZWRpYSBtYXkgZWFybiBhIG
+            NvbW1pc3Npb24uIFNlZSBvdXIgZXRoaWNzIHBvbGljeTogaHR0cDovL2JpdC5seS8yVFFzcWpCIE9yZGVyIHRoZSBpUGhvbmUgMTIgZnJvbSBBcHBsZTouLi4%3D&s
+            hhk=czFdbqxGYSg7R0jyilSIrsSM8YDoLZsbK4SGeGTOMe8%3D&form=VDSHOT&shth=OVP.7
+            j9WEpHlQTKedEWToHLckAHgFo" style="width: 95px;height: 100px;"></iframe>
+            <img src="apple-iphone-12-blue-3d-.jpg"  style="width: 100px;height: 100px;">
+            
+        
+        
+        
+        </div>
+        
+            <div class="box2"><img src="apple-iphone-12-blue-3d-.jpg" style="width: 500px;padding-top: 30px;
+                height: 430px; position: sticky;"></div>
+                <div class="box3">
+                    <h1 style="margin-top: 2cm; border-bottom: 1px solid grey;">New Apple iPhone 12 Pro (128GB) - Pacific Blue</h1>
+                    <h4>Visit the apple store</h4>
+                    <h4>Deal of the Day:  ₹97,900.00</h4>
+                    <h4>You Save:	₹22,000.00 (18%) <br>
+                        Inclusive of all taxes</h4>
+                        <h4>Style name: <button>128GB</button>
+                        <button>256GB</button> <button>512GB</button></h4>
+                        <h4>Model Name:	IPhone 12 Pro 128GB Pacific Blue <br>
+                            Wireless Carrier:Unlocked for All Carriers <br>
+                            Brand:Apple <br>
+                            Form Factor:Smartphone <br>
+                            Memory Storage Capacity:1</h4>
+                            <h5>About this item</h5>
+                            <ul><li>6.1-inch (15.5 cm diagonal) Super Retina XDR display</li></ul>
+                            <ul><li>Ceramic Shield, tougher than any smartphone glass</li></ul>
+                            <ul><li>Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras; 4x optical zoom range; Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording</li></ul>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alias? Reiciendis, fuga molestiae quidem quaerat, libero qui, dicta unde earum obcaecati quibusdam sequi aperiam. Reiciendis maxime consequatur laboriosam. Veritatis, aliquid!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi iure quibusdam earum voluptatum minus! Ea in quasi fugiat quibusdam nulla voluptas eaque blanditiis, ipsum, totam excepturi quaerat explicabo, adipisci a.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi vero, ad quibusdam consectetur, tempore accusantium maxime tempora dolores repudiandae, quis nesciunt quisquam facere incidunt itaque perferendis quia eum. Eveniet?</p>
+
+
+                        </div>
+                <div class="card">
+                <div class="box4" style=" width: 350px; padding-left:50px ;">
+                    <h3 style="margin-top: 2cm; ">Add an Accesorry:</h3>
+                    <h4><button><ul style="color: coral;"><li>Apple airpods pro 18999RS/-</li></ul></button></h4>
+                    <h4><button><ul style="color: coral;"><li>Apple adaptor 1899/-</li></ul></button></h4>
+                    <h1><button style="width: 5cm; height: 1cm;">Add to cart</button></h1>
+                    <h1><button  style="width: 5cm; height: 1cm;">Buy now</button></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti nihil atque, rem eligendi necessitatibus laborum numquam voluptatum cum assumenda esse, <br> quis minus laboriosam corrupti quam consectetur fuga libero aut.</p>
+                    <h3><button style="width: 7cm;height: 0.8cm;justify-content: center;">Add to Wishlist</button></h3>
+
+                </div></div>
+        </div>
+        
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+     
+           
+    
+
+</body>
+
+</html>

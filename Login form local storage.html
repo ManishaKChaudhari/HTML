@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .box1 {
+            width: 500px;
+            height: 600px;
+            /* border: 2px black solid; */
+            background-color: rgba(208, 220, 252, 0);
+            background-image: url("bridge newyork.jfif");
+            background-size: cover;
+        }
+        
+        input {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 100px;
+            width: 300px;
+            height: 25px;
+        }
+        
+        button {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 150px;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1 style="margin-left:25%; margin-top: 80px; color: rgb(92, 20, 228);">Registration form</h1>
+            <h3><input type="text" placeholder="Name" id="name"></h3>
+            <h3><input type="text" placeholder="email" id="email"></h3>
+            <h3><input type="password" placeholder="Passward" id="Passward"></h3>
+
+            <h3><button id="save_btn" onclick="saveData()" ;>Submit</button></h3>
+
+        </div>
+    </div>
+    <script>
+        function saveData() {
+            let Name = document.getElementById("name").value;
+            let Email = document.getElementById("email").value;
+            let passward = document.getElementById("Passward").value;
+
+            let user_records = new Array();
+            user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
+
+            if (user_records.some((v) => {
+                    return v.email == email
+                })) {
+                alert("This email already exists")
+
+            } else {
+                user_records.push({
+                    "name": Name,
+                    "email": email,
+                    "Passward": passward
+
+                })
+            }
+            localStorage.setItem("users", JSON.stringify(user_records));
+        }
+    </script>
+</body>
+
+</html>

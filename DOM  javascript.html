@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Hello Javascript</h1>
+
+    <script>
+        console.log('Hey!!')
+
+        let selectedColors = ['green', 'red']
+        selectedColors[2] = 'pink';
+        console.log(selectedColors)
+
+        function greet(name, lastName) { // name is parameter at declaration//
+            //body//
+            // console.log('Hello ' + name + ' ' + lastName);
+        }
+        greet('john', 'Smith'); //semicolon to indicate this is statement//john is argument//
+        greet('Manisha'); // this prints hello manisha undefined as we have not passes lastname argument //
+    </script>
+
+    <!-- id is used to get speific access to that element -->
+
+    <p id="para"><a id="myAnchor"><button>Click on this </button></a></p>
+    <!-- here <a> is only placeholder as it does not have href attribute  -->
+
+    <script>
+        document.getElementById("myAnchor").href = "Login with carousel.html";
+    </script>
+
+    <script>
+        var show = function() {
+            console.log("Hii john")
+            return true;
+            console.log("hello")
+        }
+
+        console.log(show())
+        if (true) {
+            console.log("permission  granted");
+        } else
+            console.log("permission denied");
+
+
+
+
+
+        var show = function() {
+            console.log("helllloo!!!");
+            return num = 4;
+
+        }
+        console.log(show())
+        if (num >= 5) {
+            console.log("num>=5")
+
+
+        } else
+            console.log("num less than 5")
+    </script>
+    <input id='data' type="text">
+    <button>Submit </button>
+    <script>
+        function displaydata() {
+            let inputdata = document.getElementById('data').value
+            console.log(InputData);
+        }
+        displaydata();
+    </script>
+    <!-- append and append child  diffrence  -->
+</body>
+
+</html>

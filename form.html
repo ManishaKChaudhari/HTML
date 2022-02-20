@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .Box1 {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 300px;
+            width: 500px;
+            background-color: aqua;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box1">
+        <label for="mark1">Name</label>
+        <input id="mark1" type="text"><br><br>
+        <label for="mark2">Physics Marks</label>
+        <input id="mark2" type="number"><br><br>
+        <label for="mark3">Chemistry Marks</label>
+        <input id="mark3" type="number"><br><br>
+        <label for="mark4">Maths Marks</label>
+        <input id="mark4" type="number"><br><br>
+        <button onclick="Calculate()" ;>Submit</button>
+
+
+
+
+
+
+        <script>
+            alert("Hii")
+
+            function Calculate() {
+                let name = (document.getElementById("mark1").value)
+                let num2 = parseInt(document.getElementById("mark2").value)
+                let num3 = parseInt(document.getElementById("mark3").value)
+                let num4 = parseInt(document.getElementById("mark4").value)
+                var total = parseInt(num2 + num3 + num4);
+                console.log("Total Of ", name, "is : ", total);
+                var percentage = parseInt(total / 3);
+                console.log("Percentage of ", name, percentage);
+
+
+
+                if (percentage < 35) {
+                    console.log('Failed')
+                } else if (percentage >= 35 && percentage < 50) {
+                    console.log('Pass Class')
+                } else if (percentage >= 50 && percentage < 75) {
+                    console.log('Pass with First Class')
+                } else if (percentage > 75)
+                    console.log('Distinction')
+            }
+            Calculate();
+        </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>flipcart price amd search bar</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <style>
+        .header1 {
+            width: 100%;
+            border: 2px solid black;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: rgb(9, 90, 240);
+            display: flex;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 20% 45% 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            height: 1500px;
+        }
+        
+        .box1 {
+            grid-column: 1/2;
+            grid-row: 2/end;
+            border: 2px solid black;
+            margin-top: -697px;
+        }
+        
+        .box2 {
+            grid-column: 2/end;
+            grid-row: 2/end;
+            border: 2px solid black;
+            margin-top: -697px;
+        }
+        
+        .box3 {
+            grid-column: 1/end;
+            grid-row: 1/end;
+            border: 2px solid black;
+            height: 50px;
+        }
+        
+        .box4 {
+            grid-column: 3/end;
+            grid-row: 2/end;
+            /* border: 2px solid red; */
+            margin-top: -697px;
+            margin-right: 10px;
+        }
+        
+        .product {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header1">
+        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" style="padding-right: 40px; height: 30px;padding-top: 10px;margin-left: 230px; ">
+        <input type="text" id="search-item" placeholder="Search products,brands and more.." onkeyup="search()" style="height: 25px;margin-top: 10px; width: 400px;"> <i class="fas fa-search" style="margin-top: 15px; margin-left:20px"></i>
+        <button style="width:150px; height: 25px;margin-top: 10px; margin-left:25%;">Login</button>
+        <h3 style="color: white; margin-top: 10px; padding-left: 30px;">More</h3>
+        <h3 style="color: white; margin-top: 10px; padding-left: 30px;">Cart</h3>
+
+    </div>
+
+    <div class="container">
+        <div class="box1">
+            <h2><b>Filters</b></h2>
+            <h3>Categories</h3>
+            <h3>Mobiles</h3>
+        </div>
+        <div class="box2" id="product-list">
+            <div class="product">
+                <img src="iphone 12.jpg" style="height: 200px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>Iphone 11</h2>
+                    <h4>
+                        <li>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</li>
+                    </h4>
+                    <h4>
+                        <li>16.51 cm (6.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>13MP + 2MP + 2MP | 5MP Front Camera</li>
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="product">
+                <img src="realme.jpg" style="height: 190px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>realme C21Y</h2>
+                    <h4>
+                        <li>7 GB RAM | 52 GB ROM | Expandable Upto 556 GB</li>
+                    </h4>
+                    <h4>
+                        <li>17.51 cm (7.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>17MP + 3MP + 3MP | 7MP Front Camera</li>
+                    </h4>
+
+                </div>
+            </div>
+            <div class="product">
+                <img src="vivoo.jpg" style="height: 190px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>VIVO Y21</h2>
+                    <h4>
+                        <li>2GB RAM | 46 GB ROM | Expandable Upto 556 GB</li>
+                    </h4>
+                    <h4>
+                        <li>17.51 cm (7.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>17MP + 3MP + 3MP | 7MP Front Camera</li>
+                    </h4>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="oppo.jpg" style="height: 190px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>Oppo Y19S</h2>
+                    <h4>
+                        <li>8 GB RAM | 65 GB ROM | Expandable Upto 556 GB</li>
+                    </h4>
+                    <h4>
+                        <li>17.51 cm (7.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>17MP + 3MP + 3MP | 7MP Front Camera</li>
+                    </h4>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="oppooo.jpg" style="height: 190px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>Oppo Y12SD</h2>
+                    <h4>
+                        <li>16 GB RAM | 95 GB ROM | Expandable Upto 456 GB</li>
+                    </h4>
+                    <h4>
+                        <li>17.51 cm (7.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>17MP + 3MP + 3MP | 7MP Front Camera</li>
+                    </h4>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="realme.jpg" style="height: 190px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>realme GH71 Narzo</h2>
+                    <h4>
+                        <li>12 GB RAM | 82 GB ROM | Expandable Upto 556 GB</li>
+                    </h4>
+                    <h4>
+                        <li>17.51 cm (7.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>17MP + 3MP + 3MP | 7MP Front Camera</li>
+                    </h4>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="vivoo.jpg" style="height: 190px; width: 210px;">
+                <div class="p-deatils" style="margin-left: -20px;">
+                    <h2>VIVO G91L</h2>
+                    <h4>
+
+                        <li>21GB RAM | 45 GB ROM | Expandable Upto 556 GB</li>
+
+                    </h4>
+                    <h4>
+                        <li>17.51 cm (7.5 inch) HD+ Display</li>
+                    </h4>
+                    <h4>
+                        <li>17MP + 3MP + 3MP | 7MP Front Camera</li>
+                    </h4>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="box3">
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px; margin-left: 300px;">Mobiles</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Furnitures</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Clothings</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Groceries</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Electronics</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Toys</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Beauty</span>
+            <span style="margin-right: 50px; font-size: 20px; padding-top: 10px;">Travel</span>
+        </div>
+        <div class="box4">
+            <div style="margin-top: 40px;">
+                <h2>63,999 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+            <div style="margin-top: 80px;">
+                <h2>27,999 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+            <div style="margin-top: 70px;">
+                <h2>43,999 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+            <div style="margin-top: 90px;">
+                <h2>23,999 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+            <div style="margin-top: 70px;">
+                <h2>43,999 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+            <div style="margin-top: 70px;">
+                <h2>23,499 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+            <div style="margin-top: 70px;">
+                <h2>23,499 Rs
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" style="width:80px" height="20px">
+                </h2>
+                <h4>Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</h4>
+                <h4>Special PriceGet extra ₹500 off (price inclusive of discount)T&C</h4>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const search = () => {
+            const searchbox = document.getElementById("search-item").value.toUpperCase();
+            const storeitems = document.getElementById("product-list");
+            const product = document.querySelectorAll(".product")
+            const pname = document.getElementsByTagName("h2")
+
+            for (var i = 0; i < pname.length; i++) {
+                let result = product[i].getElementsByTagName('h2')[0]
+                if (result) {
+                    let textvalue = result.innerHTML;
+                    if (textvalue.toUpperCase().indexOf(searchbox) > -1) //index of searchbox is start of searchbox
+                    {
+                        product[i].style.display = "";
+                    } else {
+                        product[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

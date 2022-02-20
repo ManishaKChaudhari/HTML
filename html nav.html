@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <style>
+         .container{
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         display: grid;
+         column-gap: 10px;
+         row-gap: 10px;
+         
+         }
+         .box1{
+             grid-column-start: 1;
+             grid-column-end: end;
+             grid-row-start: 1;
+            
+             grid-column: 1/5;
+             grid-row: 1;
+             border: 2px solid black;
+             
+             
+         }
+         .box2{
+             grid-row: 2;
+             grid-column: 1;
+             grid-row-end: 2;
+             grid-row-start: 2;
+             border: 2px solid black;
+             
+             height: 200px;
+         }
+         .box3{ grid-row:2;
+             grid-column: 3;
+             grid-column-end: end;
+             grid-column-start: 2;
+             border: 2px solid black;
+             
+             height: 200px;
+         
+
+         }
+         .box4{
+             grid-row: 3;
+             grid-column:2;
+             grid-column-start: 1;
+             grid-column-end: 3;
+            
+             border: 2px solid black;
+             height: 200px;
+             
+         }
+         .box5{
+             grid-column: 3;
+             grid-row:3;
+             grid-column-start: 3;
+             grid-column-end: end;
+             
+             border: 2px black solid;
+             height: 200px;
+         }
+         .box6{
+             grid-row:4;
+             grid-column:1;
+             grid-column-start:1;
+             grid-column-end:end;
+             border: 2px black solid; 
+            
+             height: 200px;
+            }
+            .box7{
+                grid-row: 5;
+                grid-column: 1;
+                grid-column-start: 1;
+                grid-column-end: end;
+                border: dashed black;
+            }
+
+
+
+ </style>
+ </head>
+ <body>
+<div class="container" style="background-image: url(https://1.bp.blogspot.com/-Tp-LaJy3b3U/WHj36ibYF9I/AAAAAAAAAzQ/2a4rjVODvV07WyO9wM47fmrZ7bh21BqpgCEw/s1600/8ba5c9334a361033ff6512a01e4af663.jpg) ;">
+    <div class="box1">
+        <h1> This is heading</h1>
+        <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, temporibus culpa nesciunt quasi porro eaque fugit ipsam corporis qui doloremque nobis itaque consequatur, earum autem reiciendis? Sequi placeat voluptas cumque.</p>
+    </div>
+    <div class="box2">
+        <h1>Section</h1>
+    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sunt saepe aspernatur, mollitia voluptate commodi iste blanditiis quaerat dolore amet quis voluptatibus officiis autem nesciunt tenetur odit facere doloremque illum.</p></div>
+    <div class="box3">
+        <h1>This is section</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium deleniti nisi sapiente perferendis, magni ea praesentium debitis id. Voluptatum repellendus, dolore delectus asperiores soluta eum commodi molestiae reprehenderit quam minima!</p>
+     </div>
+     <div class="box4">
+         <h1>Article</h1>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui numquam iure recusandae in itaque repudiandae repellat voluptas fugiat totam. Voluptatem, perspiciatis. Itaque fuga porro adipisci praesentium dolorum sed deleniti eligendi!</p>
+     </div>
+     <div class="box5"><h1>Hello!</h1> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quam aperiam fugiat libero iure iusto cum laborum distinctio totam ex animi perferendis quidem enim, id modi velit ut quasi facilis?</p></div>
+     <div class="box6"><h1> Hey!!!</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime saepe sequi aut expedita quia molestias vel amet fuga aliquid veritatis ullam repudiandae officia at facere vitae et quibusdam, doloribus nisi?</p></div>
+     <div class="box7"><h1> Footer</h1></div>
+</div>
+
+ </body>
+ 
+ 
+ </html>
